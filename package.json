@@ -1,0 +1,50 @@
+{
+  "name": "sails-pug-sass",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A Sails Empty application using PUG Template and SASS",
+  "keywords": [
+    "sails",
+    "sails.js",
+    "pug",
+    "scss",
+    "sass"
+  ],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "consolidate": "^0.15.1",
+    "grunt": "1.0.4",
+    "pug": "^2.0.4",
+    "sails": "^1.2.3",
+    "sails-hook-grunt": "^4.0.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xuannghia/sails-pug-sass.git"
+  },
+  "author": "xuannghia",
+  "license": "ISC",
+  "engines": {
+    "node": "^8.14"
+  },
+  "bugs": {
+    "url": "https://github.com/xuannghia/sails-pug-sass/issues"
+  },
+  "homepage": "https://github.com/xuannghia/sails-pug-sass#readme"
+}
